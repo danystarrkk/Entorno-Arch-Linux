@@ -55,7 +55,7 @@ function installDependencias() {
     makepkg -si
     cd $rutaE
 
-    yay -S net-tools flameshot xclip xsel responsively neovim xorg-xsetroot google-chrome git vim zsh bspwm sxhkd picom polybar rofi feh kitty zsh-syntax-highlighting bat lsd npm open-vm-tools vmname dash glib2-devel gtkmm3 zellij
+    yay -S net-tools flameshot xclip xsel neovim xorg-xsetroot git vim zsh bspwm sxhkd picom polybar rofi feh kitty zsh-syntax-highlighting bat lsd npm open-vm-tools wmname dash glib2-devel gtkmm3
 
     if [ $(echo $?) -eq 0 ]; then
       clear
@@ -81,7 +81,6 @@ function configuracionEntorno() {
 
     cp -r $rutaT/bspwm $rutaP/.config
     cp -r $rutaT/sxhkd $rutaP/.config
-    cp -r $rutaT/zellij $rutaP/.config
 
     chsh -s /bin/zsh
     sudo chsh -s /bin/zsh

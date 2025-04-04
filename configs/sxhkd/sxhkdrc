@@ -125,3 +125,11 @@ super + alt + {h,j,k,l}
 # Flameshot
 super + shift + s
   /usr/bin/flameshot gui
+
+# Firefox
+super + shift + f
+  /opt/firefox/firefox
+
+# Burpsuite
+super + shift + b
+  /bin/burpsuite
